@@ -1,0 +1,35 @@
+//we can use the public protected and private access modifier in C++
+#include<iostream>
+using namespace std;
+struct book
+{
+    private :
+    int bookid;
+    char title[20];
+    float price;
+
+    public:
+    void input()
+    {
+        cout<<"Enter bookid, title, and price of book"<<endl;
+        //cin>>b1.bookid>>b1.title>>b1.price;
+        cin>>bookid>>title>>price;
+        /*if(bookid<0){
+            bookid=-bookid;
+        }*/
+    }
+    void display()
+    {
+        cout<<"\n"<<"Book Id :"<<bookid<<endl<<"Book Title : "<<title<<endl<<"Book Price : "<<price;
+    }
+};
+   main()
+  {
+
+    book b1;
+    b1.bookid=-100;//if user directly assign the value user can made a mistake.don't give access the user directly.
+    b1.input();
+    b1.display();
+}
+
+

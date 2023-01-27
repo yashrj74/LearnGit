@@ -1,0 +1,17 @@
+//static and Automatic Storage Class
+#include<stdio.h>
+#include<conio.h>
+void f1();
+int main(){
+
+	f1();
+	f1();
+}
+void f1(){
+    //int i;//garbage value
+    //int i=0;
+    //static int i=0;
+    //i++;
+    printf("i=%d\n",i);
+}
+

@@ -1,0 +1,24 @@
+//static member variable
+#include<iostream>
+using namespace std;
+
+class Account{
+
+private:
+    int balance;//instance member variable
+    static float roi;//static member variable/class variable
+
+public:
+    setBalance(int b){
+        balance = b;
+    }
+};
+//float Account::roi=3.5f;//when we define it here it gets memory. so without making of object it gets memory.so it is independent of instance or object.
+ main(){
+
+    Account a1;
+    cout<<Account::roi;
+}
+
+
+

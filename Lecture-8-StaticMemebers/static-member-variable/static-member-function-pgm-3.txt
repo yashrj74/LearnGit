@@ -1,0 +1,38 @@
+//static member function
+#include<iostream>
+using namespace std;
+
+class Account{
+
+private:
+    int balance;//instance member variable
+    static float roi;//static member variable/class variable
+
+public:
+    void setBalance(int b){
+        balance = b;
+    }
+    /*void setRoi(float r){
+        roi=r;
+    }*/
+    static void setRoi(float r){ //static member function.static member function can call only static variables only.
+        roi=r;
+    }
+    static void getRoi(){
+        cout<<roi;
+    }
+};
+float Account::roi=0;//when we define it here it gets memory. so without making of object it gets memory.so it is independent of instance or object.
+ main(){
+
+    Account a1;
+    //how to access the static members
+    //Account::roi=4.5//we can do it if roi was the public
+        //a1.setRoi(3.5f);
+        //a1.getRoi();
+    Account::setRoi(4.5f);
+    Account::getRoi();
+}
+
+
+

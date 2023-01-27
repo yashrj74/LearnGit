@@ -1,0 +1,28 @@
+//In C we can only make the variables but in C++ we can make function as well this achieves the encapsulation.
+#include<iostream>
+using namespace std;
+struct book
+{
+    int bookid;//member variables
+    char title[20];
+    float price;
+    void input() //member functions
+    {
+        cout<<"Enter bookid, title, and price of book"<<endl;
+        //cin>>b1.bookid>>b1.title>>b1.price;
+        cin>>bookid>>title>>price;//can access without dot operator.
+    }
+    void display()
+    {
+        cout<<"\n"<<"Book Id :"<<bookid<<endl<<"Book Title : "<<title<<endl<<"Book Price : "<<price;
+    }
+};
+   main()
+  {
+
+    book b1;
+    b1.input();
+    b1.display();
+}
+
+

@@ -1,0 +1,62 @@
+#include<iostream>
+#include <cstring>
+using namespace std;
+//global definitions
+struct book
+{
+    int bookid;//member variable
+    char title[20];
+    float price;
+};
+//}b2;
+//book b2;//b2 is a global variable
+//void display(book);
+//book input();
+
+  main(){
+
+    //struct book b1; //writing the struct keyword is optional in C++
+     //book b1;//b1 is local variable
+     /*book b1={100,"C++ by KKP",450.0};
+     cout<<"Book Id :"<<b1.bookid<<endl<<"Book Title : "<<b1.title<<endl<<"Book Price : "<<b1.price;
+    */
+     /*book b2;
+     b2.bookid=101;
+     //b2.title="C++ by KKP";//wrong
+     strcpy(b2.title,"C++ by OOPS");
+     b2.price=350.00;*/
+    // cout<<"Book Id :"<<b2.bookid<<endl<<"Book Title : "<<b2.title<<endl<<"Book Price : "<<b2.price;
+
+     //assing one varialbe to another
+     /*b3.bookid = b2.bookid;
+     b3.title = b2.title;
+     b3.price = b2.price;*/
+
+     /*book b3;
+     b3=b2;
+    cout<<"Book Id :"<<b3.bookid<<endl<<"Book Title : "<<b3.title<<endl<<"Book Price : "<<b3.price;
+    */
+     //take data from user
+     /*book b1;
+     cout<<"Enter bookid, title, and price of book"<<endl;
+     cin>>b1.bookid>>b1.title>>b1.price;*/
+
+     //make function for structure
+     /*book b1;
+     b1 = input();
+     display(b1);//function passing structure
+
+}
+void display(book b)
+{
+    cout<<"Book Id :"<<b.bookid<<endl<<"Book Title : "<<b.title<<endl<<"Book Price : "<<b.price;
+}
+book input()
+{
+    book b;
+    cout<<"Enter bookid, title, and price of book"<<endl;
+    cin>>b.bookid>>b.title>>b.price;
+    return(b);//returning structure.we can return only one value.but here indirectly we are returning multiple value.
+}*/
+
+
